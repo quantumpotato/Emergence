@@ -1,0 +1,29 @@
+Notes for Emergence
+Goal: A multiplayer game where everything is emergent. Everything is either user designed/scripted or evolves through genetic algorithms. The majority of objects in the game are highly scriptable.
+
+
+Asteroids
+
+Gameplay exists within a circular mining net
+Asteroids float from outside the circle inwards of random sizes, random shapes,random velocities.
+Asteroid size and shape is derived from randomly determined “health” of an asteroid
+Asteroids bounce back inside if they hit the edge of the circle coming from inside the circle
+Lasers reduce asteroid health and consequently scale.
+When an asteroid’s health expires it is destroyed and mineral dust is created.
+Mineral dust floats at the velocity the asteroid had until it reaches mining net edge.
+Mineral dust that reaches mining net edge will harvest the dust and score resources for the player(s) that setup the net.
+
+Ship Operation
+
+Thrust forward: ship increases thrust forward up to a maximum value determined by the engine
+Thrust backwards: ship increases thrust backwards up to a maximum value determined by the engine
+Rotate left: ship rotates left at a rate determined by the wings
+Rotate right: ship rotates right at a rate determined by the wings
+Fire laser: ship fires a laser out of its nose.
+
+Lasers
+
+Lasers move at a constant velocity set by the ship’s velocity combined with weapon force on firing.
+Lasers exit the mining net
+Lasers reduce asteroid health by their power when they collide
+Lasers collide with ships and damage that ship as well as pushing the ship
